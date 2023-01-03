@@ -1,0 +1,255 @@
+set god_ [God instance]
+
+$god_ set-dist 1 2 2
+$god_ set-dist 0 2 3
+$god_ set-dist 0 1 1
+
+if { "$val(traffic)" == "cbr" } {
+   	set pktType cbr
+   } else {
+   	set pktType exp
+   }
+$ns_ at 0.0 "$ns_ trace-annotate \"Blue node denotes the Server\""
+$ns_ at 0.0 "$ns_ trace-annotate \"Yellow node denotes the CO-ordinators\""
+$ns_ at 0.0 "$ns_ trace-annotate \"Green node denotes the Cluster Members\""
+
+for {set i 0} {$i < $val(nn) } {incr i} {
+$node_($i) color black
+}
+
+$node_(19) set Z_ 0.000000000000
+$node_(19) set Y_ 308.033
+$node_(19) set X_ 302.398
+$node_(0) set Z_ 0.000000000000
+$node_(0) set Y_ 249.661
+$node_(0) set X_ 591.838
+$node_(1) set Z_ 0.000000000000
+$node_(1) set Y_ 188.391
+$node_(1) set X_ 485.038
+$node_(2) set Z_ 0.000000000000
+$node_(2) set Y_ 252.252
+$node_(2) set X_ 548.378
+$node_(3) set Z_ 0.000000000000
+$node_(3) set Y_ 205.874
+$node_(3) set X_ 564.545
+$node_(4) set Z_ 0.000000000000
+$node_(4) set Y_ 169.154
+$node_(4) set X_ 544.102
+$node_(5) set Z_ 0.000000000000
+$node_(5) set Y_ 153.935
+$node_(5) set X_ 507.102
+$node_(6) set Z_ 0.000000000000
+$node_(6) set Y_ 274.143
+$node_(6) set X_ 476.337
+$node_(7) set Z_ 0.000000000000
+$node_(7) set Y_ 273.935
+$node_(7) set X_ 518.116
+$node_(8) set Z_ 0.000000000000
+$node_(8) set Y_ 233.534
+$node_(8) set X_ 464.678
+
+$ns_ at 7.0 "$node_(14) color yellow"
+$ns_ at 3.0 "$node_(28) color yellow"
+$ns_ at 1.0 "$node_(44) color yellow"
+$ns_ at 1.0 "$node_(38) color yellow"
+$ns_ at 12.0 "$node_(3) color yellow"
+#$ns_ at 14.0 "$node_(1) color yellow" 
+
+$ns_ at 7.0 "$node_(14) label Cluster_Head"
+$ns_ at 3.0 "$node_(28) label Cluster_Head"
+$ns_ at 1.0 "$node_(44) label Cluster_Head"
+$ns_ at 1.0 "$node_(38) label Cluster_Head"
+$ns_ at 12.0 "$node_(3) label Cluster_Head"
+
+$node_(9) set Z_ 0.000000000000
+$node_(9) set Y_ 222.264
+$node_(9) set X_ 525.234
+$node_(10) set Z_ 0.000000000000
+$node_(10) set Y_ 46.162
+$node_(10) set X_ 419.64
+$node_(11) set Z_ 0.000000000000
+$node_(11) set Y_ 79.1046
+$node_(11) set X_ 422.686
+$node_(12) set Z_ 0.000000000000
+$node_(12) set Y_ 141.469
+$node_(12) set X_ 393.056
+$node_(13) set Z_ 0.000000000000
+$node_(13) set Y_ 140.882
+$node_(13) set X_ 356.446
+$node_(14) set Z_ 0.000000000000
+$node_(14) set Y_ 87.743
+$node_(14) set X_ 372.191
+$node_(15) set Z_ 0.000000000000
+$node_(15) set Y_ 105.36
+$node_(15) set X_ 324.069
+$node_(16) set Z_ 0.000000000000
+$node_(16) set Y_ 118.508
+$node_(16) set X_ 422.191
+
+$node_(17) set Z_ 0.000000000000
+$node_(17) set Y_ 62.873
+$node_(17) set X_ 328.408
+
+$node_(18) set Z_ 0.000000000000
+$node_(18) set Y_ 45.9687
+$node_(18) set X_ 369.017
+
+
+$node_(19) set Z_ 0.000000000000
+$node_(19) set Y_ 308.033
+$node_(19) set X_ 302.398
+
+$node_(20) set Z_ 0.000000000000
+$node_(20) set Y_ 356.867
+$node_(20) set X_ 69.4952
+
+$node_(21) set Z_ 0.000000000000
+$node_(21) set Y_ 251.686
+$node_(21) set X_ 131.477
+
+$node_(22) set Z_ 0.000000000000
+$node_(22) set Y_ 330.572
+$node_(22) set X_ 137.112
+
+$node_(23) set Z_ 0.000000000000
+$node_(23) set Y_ 293.007
+$node_(23) set X_ 137.112
+
+$node_(24) set Z_ 0.000000000000
+$node_(24) set Y_ 345.598
+$node_(24) set X_ 103.304
+
+$node_(25) set Z_ 0.000000000000
+$node_(25) set Y_ 323.059
+$node_(25) set X_ 56.3475
+
+$node_(26) set Z_ 0.000000000000
+$node_(26) set Y_ 251.686
+$node_(26) set X_  95.7907
+
+$node_(27) set Z_ 0.000000000000
+$node_(27) set Y_ 281.737
+$node_(27) set X_ 39.4432
+
+$node_(28) set Z_ 0.000000000000
+$node_(28) set Y_ 293.007
+$node_(28) set X_ 97.669
+
+$node_(29) set Z_ 0.000000000000
+$node_(29) set Y_ 58.2257
+$node_(29) set X_ 253.564
+
+$node_(30) set Z_ 0.000000000000
+$node_(30) set Y_ 114.573
+$node_(30) set X_ 238.538
+
+
+$node_(31) set Z_ 0.000000000000
+$node_(31) set Y_ 30.052
+$node_(31) set X_ 268.59
+
+
+$node_(32) set Z_ 0.000000000000
+$node_(32) set Y_ 110.817
+$node_(32) set X_ 159.651
+
+
+$node_(33) set Z_ 0.000000000000
+$node_(33) set Y_ 87.5506
+$node_(33) set X_ 267.006
+
+
+$node_(34) set Z_ 0.000000000000
+$node_(34) set Y_ 120.208
+$node_(34) set X_ 197.216
+
+
+$node_(35) set Z_ 0.000000000000
+$node_(35) set Y_ 63.8605
+$node_(35) set X_ 148.382
+
+
+$node_(36) set Z_ 0.000000000000
+$node_(36) set Y_ 30.052
+$node_(36) set X_ 217.877
+
+
+$node_(37) set Z_ 0.000000000000
+$node_(37) set Y_ 22.539
+$node_(37) set X_ 174.677
+
+
+$node_(38) set Z_ 0.000000000000
+$node_(38) set Y_ 69.4952
+$node_(38) set X_ 193.46
+
+
+$node_(39) set Z_ 0.000000000000
+$node_(39) set Y_ 133.356
+$node_(39) set X_ 69.4952
+
+
+$node_(40) set Z_ 0.000000000000
+$node_(40) set Y_ 174.677
+$node_(40) set X_ 1.87825
+
+$node_(41) set Z_ 0.000000000000
+$node_(41) set Y_ 80.7647
+$node_(41) set X_ 78.8865
+
+$node_(42) set Z_ 0.000000000000
+$node_(42) set Y_ 150.26
+$node_(42) set X_ -31.9302
+
+$node_(43) set Z_ 0.000000000000
+$node_(43) set Y_ 101.425
+$node_(43) set X_ -43.1997
+
+$node_(44) set Z_ 0.000000000000
+$node_(44) set Y_ 120.208
+$node_(44) set X_ -7.513
+
+$node_(45) set Z_ 0.000000000000
+$node_(45) set Y_ 45.078
+$node_(45) set X_ 35.6867
+
+$node_(46) set Z_ 0.000000000000
+$node_(46) set Y_ 52.591
+$node_(46) set X_ 0
+
+$node_(47) set Z_ 0.000000000000
+$node_(47) set Y_ 61.9822
+$node_(47) set X_ -39.4432
+
+$node_(48) set Z_ 0.000000000000
+$node_(48) set Y_ 99.5472
+$node_(48) set X_ 35.6867
+
+$node_(49) set Z_ 0.000000000000
+$node_(49) set Y_ 167.164
+$node_(49) set X_ 45.078
+
+
+$ns_ at 0.0 "$node_(19) color PURPLE"
+$ns_ at 0.0 "$node_(19) shape hexagon"
+$ns_ at 0.0 "$node_(19) label Server"
+$ns_ at 3.0 "$node_(41) setdest 163.177 136.958 20"
+$ns_ at 3.0 "$node_(45) setdest 137.267 29.949 20"
+$ns_ at 3.0 "$node_(32) setdest 151.006 97.8492 20"
+$ns_ at 4.0 "$node_(29) setdest 340.016 142.516 20"
+$ns_ at 4.0 "$node_(13) setdest 432.783 201.28 20"
+$ns_ at 3.0 "$node_(45) label Cluster_Head"
+$ns_ at 3.0 "$node_(41) label Cluster_Head"
+$ns_ at 3.0 "$node_(29) label Cluster_Head"
+$ns_ at 3.0 "$node_(13) label Cluster_Head"
+$ns_ at 8.15 "$node_(45) label ."
+$ns_ at 8.15 "$node_(41) label ."
+$ns_ at 9.186739 "$node_(29) label ."
+$ns_ at 9.087631 "$node_(13) color yellow"
+
+$ns_ at 7.0 "$node_(14) color yellow"
+$ns_ at 3.0 "$node_(28) color yellow"
+$ns_ at 1.0 "$node_(44) color yellow"
+$ns_ at 1.0 "$node_(38) color yellow"
+$ns_ at 12.0 "$node_(3) color yellow"
+

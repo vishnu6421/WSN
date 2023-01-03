@@ -1,0 +1,261 @@
+
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(28) $tcp
+$ns_ attach-agent $node_(25) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 2.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(28) $tcp
+$ns_ attach-agent $node_(26) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 3.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(28) $tcp
+$ns_ attach-agent $node_(27) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 4.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(27) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 10.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(23) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 11.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(26) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 12.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(25) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 15.00000000000000 "$ftp start"
+$ns_ at 15 "$node_(25) color red"
+$ns_ at 15 "$node_(25) label Malicious_Node"
+$ns_ at 15.1 "$node_(25) setdest 54.6868 487.474 20"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(35) $tcp
+$ns_ attach-agent $node_(34) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 2.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+$ns_ at 23.00000000000000 "$ftp stop"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(35) $tcp
+$ns_ attach-agent $node_(38) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 3.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+$ns_ at 23.00000000000000 "$ftp stop"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(35) $tcp
+$ns_ attach-agent $node_(31) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 4.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+$ns_ at 23.00000000000000 "$ftp stop"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(34) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 15.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(38) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 16.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(31) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 19.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(33) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 21.00000000000000 "$ftp start"
+$ns_ at 23 "$node_(35) color red"
+$ns_ at 23.1 "$node_(35) setdest 512.086 5.73431 20"
+$ns_ at 23 "$node_(35) label Malicious_Node"
+#......................................................................
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(44) $tcp
+$ns_ attach-agent $node_(42) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 2.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(44) $tcp
+$ns_ attach-agent $node_(43) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 3.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(44) $tcp
+$ns_ attach-agent $node_(45) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 4.00000000000000 "$ftp start"
+$ns_ at 10.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(42) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 15.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(43) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 16.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(45) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 19.00000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(47) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 21.00000000000000 "$ftp start"
+$ns_ at 23.00000000000000 "$ftp stop"
+
+$ns_ at 23 "$node_(47) color red"
+$ns_ at 23 "$node_(47) label Malicious_Node"
+$ns_ at 23 "$node_(47) setdest 570.052 42.0532 20"
+
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(8) $tcp
+$ns_ attach-agent $node_(13) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 8.15000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(1) $tcp
+$ns_ attach-agent $node_(13) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 8.15000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(5) $tcp
+$ns_ attach-agent $node_(13) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 8.15000000000000 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(13) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 22 "$ftp start"
+set tcp [new Agent/TCP]
+$tcp set class_ 2
+set sink [new Agent/TCPSink]
+$ns_ attach-agent $node_(9) $tcp
+$ns_ attach-agent $node_(19) $sink
+$ns_ connect $tcp $sink
+set ftp [new Application/FTP]
+$ftp attach-agent $tcp
+$ns_ at 22 "$ftp start"
+
